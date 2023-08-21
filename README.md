@@ -1,8 +1,8 @@
-# Waves Enterprise Esling configuration
+# Esling configuration
 
 ### Install
 ```
-npm i -D eslint @wavesenterprise/eslint-config
+npm i -D eslint @hastom/eslint-config
 ```
 
 ### Use
@@ -18,8 +18,8 @@ module.exports = {
     }
   },
   extends: [
-    '@wavesenterprise/eslint-config/typescript-mixed',
-    '@wavesenterprise/eslint-config/react',
+    '@hastom/eslint-config/typescript-mixed',
+    '@hastom/eslint-config/react',
   ]
 };
 
@@ -29,7 +29,7 @@ module.exports = {
     project: './tsconfig.json',
   },
   extends: [
-    '@wavesenterprise/eslint-config/typescript-pure',
+    '@hastom/eslint-config/typescript-pure',
   ]
 };
 
@@ -41,19 +41,19 @@ module.exports = {
     }
   },
   extends: [
-    '@wavesenterprise/eslint-config/base',
+    '@hastom/eslint-config/base',
   ]
 };
 
 ```
 
-Extend `@wavesenterprise/eslint-config/typescript-mixed` if your project uses typescript AND javascript
+Extend `@hastom/eslint-config/typescript-mixed` if your project uses typescript AND javascript
 
-Extend `@wavesenterprise/eslint-config/typescript-pure` if your project uses ONLY typescript
+Extend `@hastom/eslint-config/typescript-pure` if your project uses ONLY typescript
 
-Extend `@wavesenterprise/eslint-config/base` if your project uses ONLY javascript
+Extend `@hastom/eslint-config/base` if your project uses ONLY javascript
 
-Extend `@wavesenterprise/eslint-config/react` if your project uses React
+Extend `@hastom/eslint-config/react` if your project uses React
 
 If `typescript-mixed` or `base` configs are extended you MUST install `@babel/core` package 
 to support `@babel/eslint-parser` plugin. 
