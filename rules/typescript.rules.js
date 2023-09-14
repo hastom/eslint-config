@@ -60,7 +60,11 @@ module.exports = {
         "arguments": 1,
       },
       "SwitchCase": 1,
-      "ignoredNodes": ["PropertyDefinition"],
+      "ignoredNodes": [
+        "PropertyDefinition[decorators]",
+        "TSUnionType",
+        "FunctionExpression[params]:has(Identifier[decorators])"
+      ],
     },
   ],
   "@typescript-eslint/member-delimiter-style": [
