@@ -1,27 +1,27 @@
-const reactRules = require('../rules/react.rules');
+const reactRules = require('../rules/react.rules')
 module.exports = {
-  "parserOptions": {
+  'parserOptions': {
     ecmaFeatures: {
       jsx: true
     }
   },
-  "plugins": [
-    "react",
-    "react-hooks"
+  'plugins': [
+    'react',
+    'react-hooks'
   ],
-  "settings": {
+  'settings': {
     react: {
-      version: "detect"
+      version: 'detect'
     }
   },
-  "rules": {
+  'rules': {
     ...reactRules,
   },
-  "overrides": [
+  'overrides': [
     {
-      files: ["*.tsx"],
+      files: ['*.tsx'],
       rules: {
-        "react/prop-types": "off",
+        'react/prop-types': 'off',
       }
     }
   ]
