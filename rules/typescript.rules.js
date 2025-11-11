@@ -45,29 +45,6 @@ module.exports = {
       'accessibility': 'no-public',
     },
   ],
-  '@typescript-eslint/indent': [
-    'error',
-    2,
-    {
-      'ObjectExpression': 1,
-      'FunctionDeclaration': {
-        'parameters': 1,
-      },
-      'FunctionExpression': {
-        'parameters': 1,
-      },
-      'CallExpression': {
-        'arguments': 1,
-      },
-      'SwitchCase': 1,
-      'ignoredNodes': [
-        'PropertyDefinition[decorators]',
-        'TSUnionType',
-        'FunctionExpression[params]:has(Identifier[decorators])',
-        'TSTypeParameterInstantiation'
-      ],
-    },
-  ],
   '@typescript-eslint/member-delimiter-style': [
     'error',
     {

@@ -17,7 +17,6 @@ module.exports = {
       ],
       "rules": {
         ...commonRules,
-        "indent": "off",
         "no-empty-function": "off",
         "no-unused-expressions": "off",
         "no-use-before-define": "off",
