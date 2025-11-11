@@ -6,7 +6,7 @@ module.exports = {
       'default': 'array-simple',
     },
   ],
-  '@typescript-eslint/ban-types': [
+  '@typescript-eslint/no-restricted-types': [
     'error',
     {
       'types': {

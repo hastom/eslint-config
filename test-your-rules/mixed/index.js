@@ -1,4 +1,4 @@
 const kek = () => {
-     const a = 'pog'
+  const a = 'pog'
 }
 export default kek
